@@ -22,38 +22,38 @@ sql.remove(table_name)
 ```
 ## Inserting Into Tables
 ```
-sql.insert(table_name, \[value])
+sql.insert(table_name, [value])
 ```
 ### Substitution
 ```
-sql.insert(table_name, \['?'], value)
+sql.insert(table_name, ['?'], value)
 ```
 ## Selecting From Tables
 ```
-for sel in sql.select(\[column_name], table_name, where_query):
+for sel in sql.select([column_name], table_name, where_query):
     print sel
 ```
 ### For no where query
 ```
-for sel in sql.select(\[column_name], table_name, None):
+for sel in sql.select([column_name], table_name, None):
     print sel
 ```
 ### Substitution for where query
 ```
-for sel in sql.select(\[column_name], table_name, 'something=?', that_something):
+for sel in sql.select([column_name], table_name, 'something=?', that_something):
     print sel
 ```
 ## Deleting From Tables
 ```
-sql.delete(\[column_name], table_name, where_query)
+sql.delete([column_name], table_name, where_query)
 ```
 ### For no where query
 ```
-sql.delete(\[column_name], table_name, None)
+sql.delete([column_name], table_name, None)
 ```
 ### Substitution for where query
 ```
-sql.delete(\[column_name], table_name, 'something=?', that_something)
+sql.delete([column_name], table_name, 'something=?', that_something)
 ```
 ## Check if Table exists
 ```
