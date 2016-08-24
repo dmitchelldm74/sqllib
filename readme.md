@@ -6,11 +6,15 @@ from sqllib import SQL
 ```
 ## Initializing
 ```
-sql = SQL(databasename)
+sql = SQL(database_name)
+```
+## Executing SQL
+```
+sql.execute(SQL_TO_EXECUTE)
 ```
 ## Create Tables
 ```
-sql.create(tablename, (columnname, type))
+sql.create(table_name, (column_name, type))
 ```
 ## Remove Tables
 ```
